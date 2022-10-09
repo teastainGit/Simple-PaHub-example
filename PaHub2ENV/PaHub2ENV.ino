@@ -8,7 +8,7 @@ void setup() {
   delay(100);
   Wire.beginTransmission(0x70); //(the PaHub)
   Wire.write(0x00);             //turns off all ports
-  Wire.endTransmission();
+  Wire.endTransmission();       // as it says!
   M5.Lcd.setTextSize(3);        //or lower for StickC
   M5.Lcd.setTextColor(RED);
 }
